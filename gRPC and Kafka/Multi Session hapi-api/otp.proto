@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package otp;
+
+service OTPService {
+  rpc getOtp (OtpRequest) returns (OtpResponse);
+  rpc VerifyOtp (VerifyRequest) returns (VerifyResponse);
+}
+
+message OtpRequest {
+  string phone_number = 1;
+}
+
+message OtpResponse {
+  string message = 1;
+  bool success = 2;
+}
+
+message VerifyRequest {
+  string otp = 1;
+}
+
+message VerifyResponse {
+  bool verified = 1;
+  string message = 2;
+}

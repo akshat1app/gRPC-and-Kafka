@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.2",
+    "@grpc/proto-loader": "^0.7.13",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "grpc": "^1.24.11",
+    "kafkajs": "^2.2.4",
+    "otp-generator": "^4.0.1",
+    "twilio": "^5.5.1"
+  },
+  "name": "otp_twilio",
+  "version": "1.0.0",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
